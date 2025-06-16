@@ -1,0 +1,169 @@
+@startuml Kursowa
+
+' ==== Abstract base class for pets ====
+abstract class Pet {
+    - string name
+    - int age
+    - int weight
+    - string breed
+    - Owner owner
+    + string Name
+    + int Age
+    + int Weight
+    + string Breed
+    + Owner Owner
+}
+
+' ==== Subclasses of Pet ====
+class Dog {
+    - bool isTrained
+    - int aggressionLevel
+    - bool isIndoor
+    + bool IsTrained
+    + int AggressionLevel
+    + bool IsIndoor
+}
+
+note left of Dog::AggressionLevel
+    On a scale from 1 to 10
+end note
+
+class Cat {
+    - bool isIndoor
+    + bool IsIndoor
+}
+
+class Goldfish {
+    - bool isSeaWater
+    - float recommendedTankVolume
+    + bool IsSeaWater
+    + float RecommendedTankVolume
+}
+
+class Hamster {
+    - string cageSize
+    - string wheelSize
+    - bool isNocturnal
+    + string CageSize
+    + string WheelSize
+    + bool IsNocturnal
+}
+
+' ==== Abstract base class for people ====
+abstract class Person {
+    - string firstName
+    - string lastName
+    - DateTime birthDay
+    + string FirstName
+    + string LastName
+    + DateTime BirthDay
+    + void ShowPets()
+}
+
+' ==== Vet class ====
+class Vet {
+    - List<Pet> certifiedToWorkWith
+    - List<Treatment> certifiedToDo
+    - DateTime employmentDate
+    + List<Pet> CertifiedToWorkWith
+    + List<Treatment> CertifiedToDo
+    + DateTime EmploymentDate
+    + void ShowPets()
+}
+
+' ==== Owner class ====
+class Owner {
+    - List<Owner> trustedOwners
+    + List<Owner> TrustedOwners
+    + void ShowPets()
+}
+
+note "Must be different implementations" as N1
+N1 .. Vet::ShowPets
+N1 .. Owner::ShowPets
+
+' ==== Abstract base class for treatments ====
+abstract class Treatment {
+    - Pet pet
+    - Vet vet
+    - string description
+    + Pet Pet
+    + Vet Vet
+    + string Description
+}
+
+' ==== Subclasses of Treatment ====
+class CheckUpTreatment {
+    - string problemDescription
+    + string ProblemDescription
+}
+
+class MedicalTreatment {
+    - string medicationName
+    - float dosageMg
+    - int durationDays
+    + string MedicationName
+    + float DosageMg
+    + int DurationDays
+}
+
+class SurgicalTreatment {
+    - string procedureName
+    - bool requiresAnesthesia
+    + string ProcedureName
+    + bool RequiresAnesthesia
+}
+
+class PreventiveTreatment {
+    - string vaccineName
+    - DateTime nextDoseDue
+    + string VaccineName
+    + DateTime NextDoseDue
+}
+
+' ==== Appointment class ====
+class Appointment {
+    - DateTime date
+    - Pet pet
+    - string problemDescription
+    - Treatment treatment
+    + DateTime Date
+    + Pet Pet
+    + string ProblemDescription
+    + Treatment Treatment
+}
+
+' ==== AppointmentManager service class ====
+class AppointmentManager {
+    + void AddAppointment(Appointment appointment)
+    + void DeleteAppointment(Appointment appointment)
+    + void UpdateAppointment(Appointment appointment)
+    + void ShowByDay(DateTime day)
+    + void ShowByVet(Vet vet)
+    + void ShowFreeSpots(DateTime day)
+    + void ShowFreeSpots(DateTime startFrom, DateTime endAt)
+}
+
+' ==== Inheritance relationships ====
+Pet <|-- Dog
+Pet <|-- Cat
+Pet <|-- Goldfish
+Pet <|-- Hamster
+
+Person <|-- Vet
+Person <|-- Owner
+
+Treatment <|-- CheckUpTreatment
+Treatment <|-- MedicalTreatment
+Treatment <|-- SurgicalTreatment
+Treatment <|-- PreventiveTreatment
+
+' ==== Association relationships ====
+Pet --> Owner : owns
+Treatment --> Pet : treats
+Treatment --> Vet : performed by
+Appointment --> Pet : for
+Appointment --> Treatment : includes
+AppointmentManager --> Appointment : manages
+
+@enduml

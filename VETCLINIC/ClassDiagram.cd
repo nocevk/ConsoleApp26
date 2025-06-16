@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VetClinic.Program" Collapsed="true">
+    <Position X="14" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.Appointments.Appointment">
+    <Position X="11.5" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACEAAAAhAAQAAAAEAAAABAAAAAQAAAAA=</HashCode>
+      <FileName>Models\Appointments\Appointment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.Appointments.AppointmentManager" Collapsed="true">
+    <Position X="11.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAAAAAAAAIABAAABAAAAAAAEAAEAAAgAAAAAAAAA=</HashCode>
+      <FileName>Models\Appointments\AppointmentManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VetClinic.Models.People.Owner">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\People\Owner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.People.Person">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAABAAAAAAAAAAAgAAAAIAAAAAAAACAAAAAg=</HashCode>
+      <FileName>Models\People\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.People.Vet">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAQAAAgEAAIAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\People\Vet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.Pets.Cat">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAABAAAAACAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Pets\Cat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.Pets.Dog">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAABAAAAAAAAAAAACAAAAAgAAAQAAAAEAAA=</HashCode>
+      <FileName>Models\Pets\Dog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.Pets.Goldfish">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAACAABAAgAAQIAAAAAAAAA=</HashCode>
+      <FileName>Models\Pets\Goldfish.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.Pets.Hamster">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAACJgAAAgQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Models\Pets\Hamster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.Pets.Pet">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAACAAAAAwAAAAEAAAAQAACAEAAAgAAAAAAIAAAA=</HashCode>
+      <FileName>Models\Pets\Pet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.Treatments.CheckUpTreatment">
+    <Position X="8.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Treatments\CheckUpTreatment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.Treatments.MedicalTreatment">
+    <Position X="11" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAIAgAICAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Treatments\MedicalTreatment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.Treatments.PreventiveTreatment">
+    <Position X="13.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAkAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Treatments\PreventiveTreatment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.Treatments.SurgicalTreatment">
+    <Position X="6.5" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAABAgABA=</HashCode>
+      <FileName>Models\Treatments\SurgicalTreatment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.Treatments.Treatment">
+    <Position X="9.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAgKAAAICgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Treatments\Treatment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Properties.Resources" Collapsed="true">
+    <Position X="14" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Properties.Settings" Collapsed="true">
+    <Position X="14" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.CRUDAppointment" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQAACAAABAAAACAAIQCAAAAgKAAgAAAAAAAASI=</HashCode>
+      <FileName>CRUDAppointment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.CRUDPerson" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAQAKAIMRAQBECABAACBAFAgEEAiSIAAAAACCI=</HashCode>
+      <FileName>CRUDPerson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.CRUDPet" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECACIAFQCSylglEgCkCIAAQDACJEgAAAguAIAAYMKCo=</HashCode>
+      <FileName>CRUDPet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.CRUDTreatment" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQgQAAQQACAEABAkBACQAABCgAAAgOSAgWBEAAIQCiI=</HashCode>
+      <FileName>CRUDTreatment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Main" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>PAhAcIJCEiIkBhABzKCMAEiCIAAAmCAqBCIGASYgAII=</HashCode>
+      <FileName>Main.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetClinic.Models.People.PersonManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAAAAAAABAAAAAAAAAAAEAAEAAAgAAAAAAAAA=</HashCode>
+      <FileName>Models\People\PersonManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VetClinic.Models.Pets.PetManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAIAQAAABAAAAAAAAAAAEAAEAAAgAAAAAAAAA=</HashCode>
+      <FileName>Models\Pets\PetManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VetClinic.Models.Treatments.TreatmentManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAABAAAAAAAAAAAEAAEACAgAAAAAAAAA=</HashCode>
+      <FileName>Models\Treatments\TreatmentManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="VetClinic.Models.IManager&lt;T&gt;">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAABAAAAAAAAAAAEAAEAAAgAAAAAAAAA=</HashCode>
+      <FileName>Models\IManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
